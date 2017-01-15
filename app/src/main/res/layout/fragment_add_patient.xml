@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.techknights.healthservicecompanion.presentation.view.fragment.AddPatientFragment" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/person"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:onClick="@{handler::onClickProfile}"/>
+
+                <com.techknights.materialedittext.MaterialTextField
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:mtf_animationDuration="0"
+                    app:mtf_image="@drawable/person">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.techknights.materialedittext.MaterialTextField>
+
+                <com.techknights.materialedittext.MaterialTextField
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:mtf_animationDuration="0"
+                    app:mtf_image="@drawable/phone">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.techknights.materialedittext.MaterialTextField>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/custom_button_round_rect_border_green"
+                    android:onClick="@{handler::onClickAddPatient}"
+                    android:padding="12dp"
+                    android:text="Add patient" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/custom_button_round_rect_border_red"
+                    android:onClick="@{handler::onClickCancel}"
+                    android:padding="12dp"
+                    android:text="Cancel"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

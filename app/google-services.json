@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "672566062264",
+    "firebase_url": "https://health-service-companion.firebaseio.com",
+    "project_id": "health-service-companion",
+    "storage_bucket": "health-service-companion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672566062264:android:bc1b009bc37d144d",
+        "android_client_info": {
+          "package_name": "com.techknights.healthservicecompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672566062264-j03anbj07qopiinq7mjarcbkp92skutq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techknights.healthservicecompanion",
+            "certificate_hash": "ACC20AFEF6DFEB0083E18E3FE3EC14D3A43FF8A2"
+          }
+        },
+        {
+          "client_id": "672566062264-ef7bddios6krhtcr2oncfj4qpbg2l1ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVhFdpsma1t51OI5-AN71T_7tefwYhCxI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672566062264-ef7bddios6krhtcr2oncfj4qpbg2l1ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
